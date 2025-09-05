@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Sales Tax Nexus Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Coder Sales Tax Nexus Analyzer</h1>
+            <p>Determine if Coder has physical nexus in each state based on sales data</p>
+        </header>
+
+        <div class="upload-section">
+            <h2>Upload Sales Data</h2>
+            <div class="file-upload">
+                <input type="file" id="csvFile" accept=".csv" />
+                <label for="csvFile" class="upload-btn">Choose CSV File</label>
+                <span id="fileName">No file selected</span>
+            </div>
+            <div class="upload-info">
+                <p><strong>Expected CSV format:</strong> State, Sales Amount</p>
+                <p>Example: California, 150000</p>
+            </div>
+        </div>
+
+        <div class="results-section" id="resultsSection" style="display: none;">
+            <h2>Nexus Analysis Results</h2>
+            <div class="summary">
+                <div class="stat">
+                    <span class="stat-number" id="totalStates">0</span>
+                    <span class="stat-label">States with Sales</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="nexusStates">0</span>
+                    <span class="stat-label">States with Nexus</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="totalSales">$0</span>
+                    <span class="stat-label">Total Sales</span>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="resultsTable">
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Sales Amount</th>
+                            <th>Nexus Threshold</th>
+                            <th>Physical Nexus</th>
+                            <th>SaaS Taxable</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultsBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>About Nexus Determination</h2>
+            <p>This tool analyzes your sales data against state-specific nexus thresholds to determine where Coder may have physical nexus obligations. The analysis is based on economic nexus thresholds which typically range from $100,000 to $500,000 in annual sales per state.</p>
+            <p><strong>Note:</strong> This is for informational purposes only. Consult with a tax professional for official nexus determinations.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

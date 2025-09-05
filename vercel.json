@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "name": "coder-nexus-analyzer"
+  "name": "coder-nexus-analyzer",
+  "buildCommand": "echo 'No build step required for static site'",
+  "outputDirectory": "public"
 }
