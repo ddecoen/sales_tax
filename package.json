@@ -1,0 +1,29 @@
+{
+  "name": "coder-nexus-analyzer",
+  "version": "1.0.0",
+  "description": "A web application that analyzes sales data to determine if Coder has physical nexus in various US states",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "sales-tax",
+    "nexus",
+    "tax-compliance",
+    "saas",
+    "coder",
+    "web-app"
+  ],
+  "author": "Coder",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddecoen/sales_tax.git"
+  },
+  "homepage": "https://github.com/ddecoen/sales_tax#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

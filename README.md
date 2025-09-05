@@ -10,6 +10,31 @@ A web application that analyzes sales data to determine if Coder has physical ne
 - **SaaS Tax Info**: Shows whether SaaS is taxable in each state
 - **Responsive Design**: Works on desktop and mobile devices
 
+## Deployment
+
+### Deploy to Vercel
+
+This app is ready for one-click deployment to Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ddecoen/sales_tax)
+
+**Manual Deployment:**
+1. Install Vercel CLI: `npm i -g vercel`
+2. Run `vercel` in the project directory
+3. Follow the prompts to deploy
+
+**GitHub Integration:**
+1. Connect your GitHub account to Vercel
+2. Import the repository
+3. Vercel will automatically deploy on every push to main/master
+
+### Local Development
+
+1. Clone the repository
+2. Open `index.html` in a web browser, or
+3. Run a local server: `python3 -m http.server 8000`
+4. Visit `http://localhost:8000`
+
 ## How to Use
 
 1. Open `index.html` in a web browser
